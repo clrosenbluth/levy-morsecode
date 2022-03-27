@@ -77,16 +77,24 @@ public class MorseCodeFrame extends JFrame
         horizontalPanel.add(toMorse);
     }
 
+    public void setEnglish(String text)
+    {
+        this.english.setText(text);
+    }
 
+    public void setMorse(String text)
+    {
+        this.morse.setText(text);
+    }
 
     public void onToEnglishClicked(ActionEvent event)
     {
-        english.setText(presenter.toEnglish(morse.getText()));
+        presenter.toEnglish(morse.getText());
     }
 
     public void onToMorseClicked(ActionEvent event)
     {
-        morse.setText(presenter.toMorse(english.getText()));
+        presenter.toMorse(english.getText());
     }
 
     public static void main(String[] args)

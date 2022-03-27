@@ -10,13 +10,13 @@ public class MorseCodePresenter
     }
 
 
-    public String toEnglish(String text)
+    public void toEnglish(String text)
     {
-        return model.toEnglish(text);
+        view.setEnglish(model.toEnglish(text));
     }
 
-    public String toMorse(String text)
+    public void toMorse(String text)
     {
-        return model.toMorseCode(text);
+        view.setMorse(model.toMorseCode(text));
     }
 }

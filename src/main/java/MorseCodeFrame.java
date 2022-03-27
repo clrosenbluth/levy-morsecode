@@ -18,7 +18,7 @@ public class MorseCodeFrame extends JFrame
 
     public MorseCodeFrame()
     {
-        setTitle("Touro Scrabble");
+        setTitle("Morse Code Translator");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());

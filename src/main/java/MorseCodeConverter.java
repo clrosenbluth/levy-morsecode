@@ -16,7 +16,9 @@ public class MorseCodeConverter
         for (char letter : toTranslate)
         {
             sb.append(dictionary.translate(String.valueOf(letter)));
+            sb.append(" ");
         }
+        sb.deleteCharAt(sb.lastIndexOf(" "));
         return sb.toString();
     }
 

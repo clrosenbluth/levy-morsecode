@@ -18,7 +18,7 @@ class MorseCodeConverterTest
         String morse = converter.toMorseCode("sss");
 
         // then
-        assertEquals(".........", morse);
+        assertEquals("... ... ...", morse);
         Mockito.verify(dictionary, Mockito.times(3)).translate("s");
     }
 

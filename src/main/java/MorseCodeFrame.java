@@ -24,8 +24,11 @@ public class MorseCodeFrame extends JFrame
         setLayout(new FlowLayout());
 
         addVerticalPanel();
+        addSpace();
         addEnglish();
+        addSpace();
         addMorse();
+        addSpace();
         addHorizontalPanel();
         addToEnglish();
         addToMorse();
@@ -40,6 +43,11 @@ public class MorseCodeFrame extends JFrame
         verticalPanel = new JPanel();
         verticalPanel.setLayout(new BoxLayout(verticalPanel, BoxLayout.Y_AXIS));
         add(verticalPanel);
+    }
+
+    private void addSpace()
+    {
+        verticalPanel.add(Box.createVerticalStrut(20));
     }
 
     private void addEnglish()

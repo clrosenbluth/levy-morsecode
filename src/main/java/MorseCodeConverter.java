@@ -18,8 +18,7 @@ public class MorseCodeConverter
             sb.append(dictionary.translate(String.valueOf(letter)));
             sb.append(" ");
         }
-        sb.deleteCharAt(sb.length() - 1);
-        return sb.toString();
+        return sb.toString().trim();
     }
 
     public String toEnglish(String morse)
